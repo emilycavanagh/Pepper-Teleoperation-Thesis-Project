@@ -1,0 +1,2 @@
+Nui-track filter=lfs diff=lfs merge=lfs -text
+Nui-track/** filter=lfs diff=lfs merge=lfs -text
