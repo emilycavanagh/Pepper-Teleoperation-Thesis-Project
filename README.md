@@ -5,6 +5,6 @@ Honours thesis project at QUT. Setting up the Pepper Robot from Softbank robotic
 
 Nui-Track Working Skeleton tracking/Joint reading program is in: Nui-Track\nuitrack-sdk\Examples\NuiTrackSDKSample-master\sample\Skeleton\build
 
-  The executable file in that folder will run and retrive data when connecte to the correct camera.
+  The executable file in that folder will run and retrive data when connected to the correct camera.
   
   NOTE: A Licence is required to run this code for every different camera used 
