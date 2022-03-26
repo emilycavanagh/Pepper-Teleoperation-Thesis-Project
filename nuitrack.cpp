@@ -189,11 +189,23 @@ inline void NuiTrack::drawSkeleton()
 
             // Print the x,y,z locations of all visible joints
             std::cout << std::fixed << std::setprecision(3);
-            std::cout << "Info: "
-                "ID" << joint.type << ","
-                "x = " << joint.proj.x << ", "
-                "y = " << joint.proj.y << ", "
-                "z = " << joint.proj.z << std::endl;
+            std::cout << joint.type << std::endl;
+
+                std::string str0 = std::to_string(joint.orient.matrix[0]);
+                std::string str1 = std::to_string(joint.orient.matrix[1]);
+                std::string str2 = std::to_string(joint.orient.matrix[2]);
+                std::string str3 = std::to_string(joint.orient.matrix[3]);
+                std::string str4 = std::to_string(joint.orient.matrix[4]);
+                std::string str5 = std::to_string(joint.orient.matrix[5]);
+                std::string str6 = std::to_string(joint.orient.matrix[6]);
+                std::string str7 = std::to_string(joint.orient.matrix[7]);
+                std::string str8 = std::to_string(joint.orient.matrix[8]);
+
+                std::string filename = "C:/Users/Emily/Documents/Engineering/Pepper-Teleoperation-Thesis-Project/Nui-Track/test.py";
+                std::string command = "python3 ";
+                std::string matrix = " [" + str0 + "," + str1 + "," + str2 + "," + str3 + "," + str4 + "," + str5 + "," + str6 + "," + str7 + "," + str8 + "]";
+                command += filename + matrix;
+                system(command.c_str());
             
             const cv::Point point = { static_cast<int32_t>( joint.proj.x * color_width ) , static_cast<int32_t>( joint.proj.y * color_height ) };
             cv::circle( skeleton_mat, point, 5, colors[id - 1], -1 );
