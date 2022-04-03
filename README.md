@@ -11,3 +11,10 @@ Honours thesis project at QUT. Setting up the Pepper Robot from Softbank robotic
 ![Project architecture](./architecture.png)
 
 [draw.io diagram](https://drive.google.com/file/d/15wpGS0--yn8Fi1c7cR0pJ2L11V6-p2VH/view?usp=sharing)
+
+| Component | Description                                                                                       |
+| --------- | ------------------------------------------------------------------------------------------------- |
+| server    | Python gRPC server to facilitate network communications between all components                    |
+| robot     | Python program to operate Pepper, gRPC client; handles robot commands and video + audio streaming |
+| sensor    | C++ program to harvest data from the Kinect sensor, gRPC client                                   |
+| cli       | Python program to conveniently control the system, gRPC client                                    |
