@@ -2,8 +2,8 @@ import logging
 
 import grpc
 
-from proto import helloworld_pb2_grpc
-from proto import helloworld_pb2
+from .proto import helloworld_pb2_grpc
+from .proto import helloworld_pb2
 
 
 class GreeterClient(object):
@@ -16,7 +16,7 @@ class GreeterClient(object):
         # the port to which the client should connect
         # to.
         self.host = 'localhost'
-        self.server_port = 50051
+        self.server_port = 8080
 
         # instantiate a communication channel
         self.channel = grpc.insecure_channel(

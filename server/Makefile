@@ -24,5 +24,8 @@ proto:
 	python3 -m grpc_tools.protoc -I=protos/ --python_out=src/proto --grpc_python_out=src/proto protos/*.proto
 	cd src/proto && sed -i '' 's/^\(import.*pb2\)/from . \1/g' *.py
 
-start:
-	python3 src/main.py	
+server:
+	python3 -m src.main
+
+client:
+	python3 -m src.greeter_client
