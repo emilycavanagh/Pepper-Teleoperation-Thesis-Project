@@ -48,5 +48,5 @@ if __name__ == '__main__':
     logging.basicConfig()
 
     client = GreeterClient()
-    # client.get_say_hello_often('lala')
     client.get_say_hello('test')
+    client.get_say_hello_often('lala')
