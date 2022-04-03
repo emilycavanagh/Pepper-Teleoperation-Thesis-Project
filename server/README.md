@@ -16,9 +16,5 @@ $ make proto
 ## Try it out!
 
 ```sh
-$ make server
-```
-
-```sh
-$ make client
+$ make start
 ```
