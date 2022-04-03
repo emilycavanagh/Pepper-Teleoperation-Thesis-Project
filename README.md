@@ -21,5 +21,9 @@ Honours thesis project at QUT. Setting up the Pepper Robot from Softbank robotic
 
 ## Setup & Install Dependencies
 
+[Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html)
+
+## Useful Links / Docs
+
 [gRPC - Python Quick Start](https://grpc.io/docs/languages/python/quickstart/)
 [gRPC - Performance Best Practices](https://grpc.io/docs/guides/performance/)

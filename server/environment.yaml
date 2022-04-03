@@ -1,0 +1,10 @@
+name: dev
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip=22
+  - pip:
+      - grpcio==1.45.0
+      - grpcio-tools==1.45.0
