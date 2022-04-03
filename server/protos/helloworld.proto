@@ -3,8 +3,6 @@ syntax = "proto3";
 /* namespace */
 package hello;
 
-// import "google/protobuf/empty.proto";
-
 // The request message containing the user's name.
 message HelloRequest {
     string name = 1;
