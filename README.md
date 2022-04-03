@@ -21,4 +21,5 @@ Honours thesis project at QUT. Setting up the Pepper Robot from Softbank robotic
 
 ## Setup & Install Dependencies
 
-[Python gRPC Quick Start](https://grpc.io/docs/languages/python/quickstart/)
+[gRPC - Python Quick Start](https://grpc.io/docs/languages/python/quickstart/)
+[gRPC - Performance Best Practices](https://grpc.io/docs/guides/performance/)
