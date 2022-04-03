@@ -18,3 +18,7 @@ Honours thesis project at QUT. Setting up the Pepper Robot from Softbank robotic
 | robot     | Python program to operate Pepper, gRPC client; handles robot commands and video + audio streaming |
 | sensor    | C++ program to harvest data from the Kinect sensor, gRPC client                                   |
 | cli       | Python program to conveniently control the system, gRPC client                                    |
+
+## Setup & Install Dependencies
+
+[Python gRPC Quick Start](https://grpc.io/docs/languages/python/quickstart/)
